@@ -3,47 +3,61 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 		<title>reveal.js</title>
-
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
-
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
-
 		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<div class="reveal">
+		<div class="slides">
+			<section><img src="img/React.jpg"></section>
+			<section>Introducing React<br><img src="img/01fig01.jpg"><br>Figure 1.1 An app.</section>
+			<section>
+				<section>OLD-SCHOOL MULTIPAGE DESIGN</section>
+				<section><img height="550" src="img/01fig02.jpg"><br>Figure 1.2 Multipage design.</section>
+			</section>
+			<section>
+				<section>NEW-SCHOOL SINGLE-PAGE APPS</section>
+				<section>
+					<img src="img/01fig03.jpg"><br>Figure 1.3 The individual page model is a bit dated, like this steam engine.
+				</section>
+				<section><img src="img/01fig04.jpg" alt=""><br>Figure 1.4 Single-page app.</section>
+				<section><img height="550" src="img/01fig05.jpg" alt=""><br>Figure 1.5 Adding children.</section>
+			</section>
+			<section>MEET REACT<br><img src="img/UN01.jpg" alt=""></section>
+				<section>Automatic UI State Management<img src="img/01fig06.jpg" alt=""><br>Figure 1.6 The final or end state of your UI is what matters in React.</section>
+				<section>Lightning-Fast DOM Manipulation <img src="img/01fig07.jpg" alt=""><br>Figure 1.7 Imagine an in-memory virtual DOM that sort of looks like this.</section>
+				<section>APIs to Create Truly Composable UIs <img height="450" src="img/01fig08.jpg"
+																  alt=""><br>Figure 1.8 An
+					example of how the visuals of your app can be broken into smaller pieces.</section>
+			</section>
+			<section>CONCLUSION</section>
 		</div>
-
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
+	</div>
+	<script src="js/reveal.js"></script>
+	<script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [
+                {src: 'plugin/markdown/marked.js'},
+                {src: 'plugin/markdown/markdown.js'},
+                {src: 'plugin/notes/notes.js', async: true},
+                {src: 'plugin/highlight/highlight.js', async: true}
+            ]
+        });
+	</script>
 	</body>
 </html>
